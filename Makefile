@@ -23,3 +23,5 @@ all: clean $(TARGET)
 
 clean:
 	-rm -f $(OBJECTS) $(DEPENDS) $(TARGET)
+
+-include $(DEPENDS)
